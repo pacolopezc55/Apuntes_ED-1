@@ -1,5 +1,7 @@
 # ELEMENTOS DEL DESARROLLO DE SOFTWARE
+
     ## INTRODUCCION
+    
       ### CICLO DE VIDA DEL SOFTWARE
          #### TIPOS DE SOFTWARE
           - De Sistema(Sistema operativo, drivers)
