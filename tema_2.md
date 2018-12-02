@@ -1,3 +1,5 @@
+![CODE](https://azardata.net/wp-content/uploads/2018/05/code-512.png)
+
 # ÍNDICE
 * INTRODUCCION
 * HERRAMIENTAS BÁSICAS
