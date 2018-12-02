@@ -2,6 +2,7 @@
 * INTRODUCCION
 * HERRAMIENTAS BÁSICAS
 * ENTORNOS INTEGRADOS DE DESARROLLO (IDE)
+* BUILD(CODE)
 
 
 ## INTRODUCCION
@@ -93,3 +94,17 @@ _Construir (Build) = Compilar + Enlazar_
    * Eclipse
    * IntelliJ IDEA
    * Oracle JDeveloper
+
+## BUILD(CODE)
+### JAR
+1. `# mkdir proyect_name`
+2. `# javac  proyect_name/script_name.java`
+3. `# jar  cvf  package_name.jar  proyect_name/*.class`
+4. `# mv  package_name.jar  /usr/lib/jvm/default-java/jre/lib/ext/aritm.jar`
+5. `# javac -cp package_name:. Main.java`
+   > _Nota_
+     package_name:. refieriendose a la ubicación de los archivos class, en este caso en ese mismo directorio
+6. `# javac  Main.java`
+7. `# java  Main`
+8. `# jar cvfe  main  Main  Main.class  package_name/*.class`
+9. `# java -jar main`
