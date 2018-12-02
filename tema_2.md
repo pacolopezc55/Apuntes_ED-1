@@ -40,10 +40,10 @@
    * Gráficos (sólo 2D)
    
   _Cada biblioteca está compuesta por varios archivos objeto_
-  * Tipos:
+  * _Tipos:_
    * bibliotecas dinámicas (.DLL o .so) (.jar en Java)
    * bibliotecas estáticas (.LIB o .a)
-  * Partes de una biblioteca:
+* _Partes de una biblioteca:_
    * Especificación (ofrece una API)  _(API = Interfaz de Programación de Aplicaciones)_
    * Implementación
   
