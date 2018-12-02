@@ -148,6 +148,7 @@ class script_name {
 }
 ```
 
+
 ### ANT
 1. Creamos una carpeta:
 `# mkdir proyect_name`
@@ -162,6 +163,7 @@ class script_name {
 4. Ejecuta el proyecto:
 `# ant run`
 
+
 ### MAVEN
 1. Creamos una carpeta:
 `# mkdir proyect_name`
@@ -174,14 +176,16 @@ class script_name {
 3. Edita el archivo pom.xml generado con cualquier editor de texto plano:
 `# nano pom.xml` OR `# code pom.xml` OR `# gedit pom.xml`
 #### pom.xml
+> Modificar lo que esta entre asteriscos para que concuerde con tu proyecto
+
 ```xml
 <project>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.miempresa.app</groupId>
-  <artifactId>mi-app</artifactId>
-  <version>1.0.0</version>
-  <name>mi-app</name>
+  <groupId>**com.miempresa.app**</groupId>
+  <artifactId>**mi-app**</artifactId>
+  <version>**1.0.0**</version>
+  <name>**mi-app**</name>
 
   <build>
     <plugins>
@@ -195,7 +199,7 @@ class script_name {
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>./</classpathPrefix>
-              <mainClass>com.miempresa.app.**script_name**</mainClass>
+              <mainClass>**com.miempresa.app**.**script_name**</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -207,7 +211,7 @@ class script_name {
           <artifactId>exec-maven-plugin</artifactId>
           <version>1.2.1</version>
           <configuration>
-            <mainClass>com.miempresa.app.**script_name**</mainClass>
+            <mainClass>**com.miempresa.app**.**script_name**</mainClass>
           </configuration>
        </plugin>
     </plugins>
@@ -225,7 +229,6 @@ class script_name {
 
 </project>
 ```
-> Modificar lo que esta en negritas
 
 4. Compilamos:
 `# mvn  compile`
@@ -241,3 +244,54 @@ class script_name {
 
 8. Para ejecutar las pruebas unitarias:
 `# mvn test`
+
+
+### GRADLE
+1. Creamos nuestra carpeta de proyecto:
+`# mkdir  proyect_name  &&  cd  proyect_name`
+
+2. Creamos la estructura:
+`# gradle  init  --type  java-library`
+
+3. Edita a tu gusto las clases que vienen por defecto poniendo atención al nombre que les das para el siguiente caso, llamemoslas script_name
+
+4. Modifica el archivo build.gradle:
+`# sudo nano build.gradle`
+#### build.gradle
+> Modificar lo que esta entre asteriscos para que concuerde con tu proyecto
+
+```gradle
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    jcenter()  
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'         
+}
+
+jar {
+    manifest {
+       attributes ('Main-Class': 'Main')
+    }
+}
+
+mainClassName = '**script_name**'
+```
+
+5. Compilamos:
+`# ./gradlew  assemble`
+
+6. Ejecutar el bytecode(opcional):
+`# cd build/classes/main  &&  java Main  &&  cd ../../..`
+
+7. Ejecutar el jar:
+`# java  -jar  build/libs/**miapp**.jar`
+
+8. Ejecutar las pruebas unitarias:
+`# ./gradlew  test`
+
+9. Para ver el informe de las pruebas:
+`# firefox build/reports/tests/index.html`
