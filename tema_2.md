@@ -47,24 +47,24 @@ _Cada biblioteca está compuesta por varios archivos objeto_
    * Especificación (ofrece una API)  _(API = Interfaz de Programación de Aplicaciones)_
    * Implementación
   
-  ### ENTORNO NECESARIO EN JAVA
-  * _JRE: necesario para ejecutar programas_
+### ENTORNO NECESARIO EN JAVA
+* _JRE: necesario para ejecutar programas_
    * JVM (inteprete java)
    * Biblioteca estándar
-  * _JDK: necesario para desarrollar programas_
+* _JDK: necesario para desarrollar programas_
    * Herramientas: javac, jar, javadoc, ...
-   
-  ### CONSTRUIR (BUILD) 
-  _Construir (Build) = Compilar + Enlazar_
-  * _Opciones:_
+
+### CONSTRUIR (BUILD) 
+_Construir (Build) = Compilar + Enlazar_
+* _Opciones:_
    * Equipo local
    * Servidor de construcción
-  * _Equipo local - Herramientas de construcción_
+* _Equipo local - Herramientas de construcción_
    * make, ninja (C, C++)
    * ant, maven, gradle (Java)
    * grunt, gulp (Javascript)
    * rake (ruby)
-  * _Buildfiles_
+* _Buildfiles_
    * make: Makefile
    * ninja: build.ninja
    * ant: build.xml
@@ -73,23 +73,23 @@ _Cada biblioteca está compuesta por varios archivos objeto_
    * grunt: Gruntfile.js
    * gulp: gulpfile.js
    * rake: Rakefile
-  * _Gneradores de buildfile - Herramienta y archivo asociado_
+* _Gneradores de buildfile - Herramienta y archivo asociado_
    * CMake: CMakeLists.txt
    * Meson: meson.build
-  * _Servidores de construcción - Integración continua (CI)_
+* _Servidores de construcción - Integración continua (CI)_
    * Jenkins
    * Bamboo
    * TravisCI
    * CircleCI
    * TeamCity
 ## ENTORNOS INTEGRADOS DE DESARROLLO (IDE)
- ### EJEMPLOS
- * Destinados principalmente a C++:
-  * DevC++
-  * Microsoft Visual Studio
-  * QtCreator
- * Destinados principalmente a Java:
-  * Netbeans
-  * Eclipse
-  * IntelliJ IDEA
-  * Oracle JDeveloper
+### EJEMPLOS
+* Destinados principalmente a C++:
+   * DevC++
+   * Microsoft Visual Studio
+   * QtCreator
+* Destinados principalmente a Java:
+   * Netbeans
+   * Eclipse
+   * IntelliJ IDEA
+   * Oracle JDeveloper
