@@ -41,11 +41,11 @@
    
   _Cada biblioteca está compuesta por varios archivos objeto_
   * _Tipos:_
-   ** bibliotecas dinámicas (.DLL o .so) (.jar en Java)
-   ** bibliotecas estáticas (.LIB o .a)
+   * bibliotecas dinámicas (.DLL o .so) (.jar en Java)
+   * bibliotecas estáticas (.LIB o .a)
   * _Partes de una biblioteca:_
-   ** Especificación (ofrece una API)  _(API = Interfaz de Programación de Aplicaciones)_
-   ** Implementación
+   * Especificación (ofrece una API)  _(API = Interfaz de Programación de Aplicaciones)_
+   * Implementación
   
   ### ENTORNO NECESARIO EN JAVA
   * _JRE: necesario para ejecutar programas_
