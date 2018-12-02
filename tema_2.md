@@ -1,5 +1,5 @@
 # ÍNDICE
-* ![CODE](https://azardata.net/wp-content/uploads/2018/05/code-512.png)
+![CODE](https://azardata.net/wp-content/uploads/2018/05/code-512.png)
 * INTRODUCCION
 * HERRAMIENTAS BÁSICAS
 * ENTORNOS INTEGRADOS DE DESARROLLO (IDE)
