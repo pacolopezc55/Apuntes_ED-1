@@ -97,14 +97,33 @@ _Construir (Build) = Compilar + Enlazar_
 
 ## BUILD(CODE)
 ### JAR
-1. `# mkdir proyect_name`
-2. `# javac  proyect_name/script_name.java`
-3. `# jar  cvf  package_name.jar  proyect_name/*.class`
-4. `# mv  package_name.jar  /usr/lib/jvm/default-java/jre/lib/ext/aritm.jar`
-5. `# javac -cp package_name:. Main.java`
-   > _Nota_
-     package_name:. refieriendose a la ubicación de los archivos class, en este caso en ese mismo directorio
-6. `# javac  Main.java`
-7. `# java  Main`
-8. `# jar cvfe  main  Main  Main.class  package_name/*.class`
-9. `# java -jar main`
+1. Creamos una carpeta:
+`# mkdir proyect_name`
+
+2. Crea con cualquier editor el script_name.java y compila: 
+`# javac  proyect_name/script_name.java`
+
+3. Creamos el paquete jar:
+`# jar  cvf  package_name.jar  proyect_name/*.class`
+
+4. Lo instalamos en la biblioteca del sistema: 
+`# mv  package_name.jar  /usr/lib/jvm/default-java/jre/lib/ext/aritm.jar`
+
+5. Creamos y compilamos el archivo Main.java: 
+`# javac -cp package_name:. Main.java`
+   > **_Nota_**
+     **package_name:.** refieriendose a la ubicación de los archivos class, en este caso en ese mismo directorio
+     
+     Si preferimos usar el código del sistema simplemente compila he importa la librería en tu script:
+     `# javac Main.java`     
+     
+6. Ejecutamos Main: 
+`# java  Main`
+ 
+   > **_Programa autocontenido_**
+   _Si prefieres crear un programa autocontenido:_
+   1. Crea el paquete jar con todas las clases anteriores:
+   `# jar cvfe  main  Main  Main.class  package_name/*.class`
+   
+   2. Ejecutalo 
+   `# java -jar main`
