@@ -126,3 +126,24 @@ _Construir (Build) = Compilar + Enlazar_
    
    2. Ejecutalo 
    `# java -jar main`
+   
+#### script_name.java
+```java
+class script_name {
+   public static void main(String[] args) {
+      System.out.println("Im the imported class");
+   }
+}
+```
+
+### Main.java
+```java
+//Uncomment the following line if you want to link this class with your system package (step 4) 
+//import package_name.script_name;
+
+class script_name {
+   public static void main(String[] args) {
+      System.out.println("Im the main class!");
+   }
+}
+```
