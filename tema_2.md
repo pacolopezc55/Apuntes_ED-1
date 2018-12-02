@@ -3,6 +3,7 @@
   * HERRAMIENTAS BÁSICAS
   * ENTORNOS INTEGRADOS DE DESARROLLO (IDE)
 
+
 ## INTRODUCCION
   ### CONCEPTOS
    * Codigo fuente
@@ -21,15 +22,15 @@
    * Interprete: lee código fuente y genera código binario para su ejecución
     
   ### BIBLIOTECAS (O LIBRERÍAS)
-   **Conjunto de archivos objeto que extienden la funcionalidad del lenguaje**
+   _Conjunto de archivos objeto que extienden la funcionalidad del lenguaje_
    * Biblioteca estándar del lenguaje
    * Bibliotecas adicionales
   
-   ### Biblioteca estándar del lenguaje C
+  ### Biblioteca estándar del lenguaje C
    * Entrada y salida por terminal
    * Manejo de archivos
    * Funciones matemáticas
-   ### Biblioteca estándar del lenguaje Java
+  ### Biblioteca estándar del lenguaje Java
    * Entrada y salida por terminal
    * Manejo de archivos
    * Funciones matemáticas
