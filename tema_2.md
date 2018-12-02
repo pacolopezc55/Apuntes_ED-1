@@ -113,8 +113,9 @@ _Construir (Build) = Compilar + Enlazar_
 `# javac -cp package_name:. Main.java`
    > **_Nota:_** _package_name:._ refieriendose a la ubicación de los archivos class, en este caso en ese mismo directorio
      
-     Si preferimos usar el código del sistema simplemente compila he importa la librería en tu script:
-     `# javac Main.java`     
+      Si preferimos usar el código del sistema simplemente compila he importa la librería en tu script:
+     
+   1. `# javac Main.java`     
      
 6. Ejecutamos Main: 
 `# java  Main`
