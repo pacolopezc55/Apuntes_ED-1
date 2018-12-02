@@ -1,10 +1,21 @@
 # ÍNDICE
 ![CODE](https://azardata.net/wp-content/uploads/2018/05/code-512.png)
 * INTRODUCCION
+   * CONCEPTOS
 * HERRAMIENTAS BÁSICAS
+   * LO BÁSICO
+   * BIBLIOTECAS (O LIBRERÍAS)
+      * Biblioteca estándar del lenguaje C
+      * Biblioteca estándar del lenguaje Java
+   * ENTORNO NECESARIO EN JAVA
+   * CONSTRUIR (BUILD) 
 * ENTORNOS INTEGRADOS DE DESARROLLO (IDE)
+   * EJEMPLOS
 * BUILD(CODE)
-
+   * JAR
+   * ANT
+   * MAVEN
+   * GRADLE
 
 ## INTRODUCCION
 ### CONCEPTOS
@@ -28,11 +39,11 @@ _Conjunto de archivos objeto que extienden la funcionalidad del lenguaje_
 * Biblioteca estándar del lenguaje
 * Bibliotecas adicionales
 
-### Biblioteca estándar del lenguaje C
+#### Biblioteca estándar del lenguaje C
 * Entrada y salida por terminal
 * Manejo de archivos
 * Funciones matemáticas
-### Biblioteca estándar del lenguaje Java
+#### Biblioteca estándar del lenguaje Java
 * Entrada y salida por terminal
 * Manejo de archivos
 * Funciones matemáticas
