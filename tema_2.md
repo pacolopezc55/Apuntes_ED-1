@@ -136,7 +136,7 @@ class script_name {
 }
 ```
 
-### Main.java
+#### Main.java
 ```java
 //Uncomment the following line if you want to link this class with your system package (step 4) 
 //import package_name.script_name;
@@ -147,3 +147,97 @@ class script_name {
    }
 }
 ```
+
+### ANT
+1. Creamos una carpeta:
+`# mkdir proyect_name`
+
+2. Ve a tu carpeta proyect_name y crea con cualquier editor script_name.java, puedes utilizar el codigo anterior: 
+`# mkdir proyect_name`
+
+3. Ejecuta ant en tu proyecto:
+`# cd proyect_name`
+`# ant`
+
+4. Ejecuta el proyecto:
+`# ant run`
+
+### MAVEN
+1. Creamos una carpeta:
+`# mkdir proyect_name`
+
+2. Ve a tu carpeta proyect_name y ejecuta:
+`#cd proyect_name`
+`# mvn archetype:generate -DgroupId=com.miempresa.app -DartifactId=myapp -Dversion=1.0.0 \
+      -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false`
+      
+3. Edita el archivo pom.xml generado con cualquier editor de texto plano:
+`# nano pom.xml` OR `# code pom.xml` OR `# gedit pom.xml`
+#### pom.xml
+```xml
+<project>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.miempresa.app</groupId>
+  <artifactId>mi-app</artifactId>
+  <version>1.0.0</version>
+  <name>mi-app</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <!-- Para construir un JAR ejecutable -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <archive>   
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>./</classpathPrefix>
+              <mainClass>com.miempresa.app.**script_name**</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <!-- Para ejecutar el JAR creado --> 
+        <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.2.1</version>
+          <configuration>
+            <mainClass>com.miempresa.app.**script_name**</mainClass>
+          </configuration>
+       </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <!-- Prueba de unidades -->
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
+```
+> Modificar lo que esta en negritas
+
+4. Compilamos:
+`# mvn  compile`
+
+5. Para ejecutar el bytecode:
+`# cd target/classes  &&  java com.miempresa.app.**script_name**  &&  cd ../..`
+
+6. Empaquetamos el jar:
+`# mvn package`
+
+7. Lo ejecutamos:
+`# mvn  exec:java`
+
+8. Para ejecutar las pruebas unitarias:
+`# mvn test`
