@@ -40,31 +40,31 @@ _Conjunto de archivos objeto que extienden la funcionalidad del lenguaje_
 * Gráficos (sólo 2D)
    
 _Cada biblioteca está compuesta por varios archivos objeto_
-* _Tipos:_
+* Tipos:
    * bibliotecas dinámicas (.DLL o .so) (.jar en Java)
    * bibliotecas estáticas (.LIB o .a)
-* _Partes de una biblioteca:_
+* Partes de una biblioteca:
    * Especificación (ofrece una API)  _(API = Interfaz de Programación de Aplicaciones)_
    * Implementación
   
 ### ENTORNO NECESARIO EN JAVA
-* _JRE: necesario para ejecutar programas_
+* JRE: necesario para ejecutar programas
    * JVM (inteprete java)
    * Biblioteca estándar
-* _JDK: necesario para desarrollar programas_
+* JDK: necesario para desarrollar programas
    * Herramientas: javac, jar, javadoc, ...
 
 ### CONSTRUIR (BUILD) 
 _Construir (Build) = Compilar + Enlazar_
-* _Opciones:_
+* Opciones:
    * Equipo local
    * Servidor de construcción
-* _Equipo local - Herramientas de construcción_
+* Equipo local - Herramientas de construcción
    * make, ninja (C, C++)
    * ant, maven, gradle (Java)
    * grunt, gulp (Javascript)
    * rake (ruby)
-* _Buildfiles_
+* Buildfiles
    * make: Makefile
    * ninja: build.ninja
    * ant: build.xml
@@ -73,10 +73,10 @@ _Construir (Build) = Compilar + Enlazar_
    * grunt: Gruntfile.js
    * gulp: gulpfile.js
    * rake: Rakefile
-* _Gneradores de buildfile - Herramienta y archivo asociado_
+* Gneradores de buildfile - Herramienta y archivo asociado
    * CMake: CMakeLists.txt
    * Meson: meson.build
-* _Servidores de construcción - Integración continua (CI)_
+* Servidores de construcción - Integración continua (CI)
    * Jenkins
    * Bamboo
    * TravisCI
