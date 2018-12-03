@@ -286,7 +286,7 @@ dependencies {
 
 jar {
     manifest {
-       attributes ('Main-Class': 'Main')
+       attributes ('Main-Class': '**script_name**')
     }
 }
 
