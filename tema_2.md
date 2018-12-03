@@ -293,7 +293,7 @@ jar {
 mainClassName = '**script_name**'
 ```
 
-#### script_test
+#### script_test.java
 ```java
 import org.junit.Test;
 import static org.junit.Assert.*;
