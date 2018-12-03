@@ -293,6 +293,20 @@ jar {
 mainClassName = '**script_name**'
 ```
 
+#### script_test
+```java
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class MainTest {
+
+  @Test
+  public void testMain() {
+      // Prueba vacía
+  }
+}
+```
+
 5. Compilamos:
 `# ./gradlew  assemble`
 
